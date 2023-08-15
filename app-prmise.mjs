@@ -1,7 +1,7 @@
 import https from 'node:https';
 //SRP
 
-const getDefinition = async (word) => {
+const getDefinition = (word) => {
     return new Promise((resolve) => {
         console.log(word)
         const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
