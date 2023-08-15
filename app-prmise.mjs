@@ -29,6 +29,9 @@ const getDefinition = (word) => {
         })
     })
 }
+const printData = async () => {
+    const data = await getDefinition('persuade');
+    console.log(data);
+}
 
-const data = await getDefinition('persuade');
-console.log(data);
+setTimeout(printData, 500);
