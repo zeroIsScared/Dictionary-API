@@ -29,8 +29,11 @@ const getDefinition = (word) => {
         })
     })
 }
-const printData = async () => {
-    const data = await getDefinition('persuade');
+
+const data = await getDefinition('persuade');
+
+const printData = async (data) => {
+    
     console.log(data);
 }
 
