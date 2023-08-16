@@ -24,7 +24,7 @@ const getDefinition = (word) => {
                 // promise -----solve, reject
             })
 
-            response.on('error', err => console.error(err));
+            response.on('error', err => reject(err));
 
         })
     })
